@@ -72,7 +72,31 @@
         "musketoon": {"name": "Musketoon", "short": 9, "medium": 18, "attacks": 1, "rules": ["reload"]},
         "rifle": {"name": "Rifle", "short": 12, "medium": 24, "attacks": 1, "rules": ["reload"]},
         "carbine": {"name": "Carbine", "short": 12, "medium": 24, "attacks": 1, "rules": ["assault", "reload"]},
-        "volley_gun": {"name": "Volley Gun", "short": 12, "medium": 24, "attacks": 1, "rules": ["reload"]}
+        "volley_gun": {"name": "Volley Gun", "short": 12, "medium": 24, "attacks": 1, "rules": ["reload"]},
+        "light_cannon": {
+            "name": "Light Cannon",
+            "rules": ["reload"],
+            "profiles": [
+                {"name": "Round", "short": 24, "medium": 48, "attacks": 1, "ap": 3, "rules": [{"id": "blast", "x": 5}]},
+                {"name": "Cannister", "short": 12, "medium": 24, "attacks": 8, "ap": 1}
+            ]
+        },
+        "medium_cannon": {
+            "name": "Medium Cannon",
+            "rules": ["reload"],
+            "profiles": [
+                {"name": "Round", "short": 24, "medium": 48, "attacks": 1, "ap": 4, "rules": [{"id": "blast", "x": 7}]},
+                {"name": "Cannister", "short": 12, "medium": 24, "attacks": 10, "ap": 2}
+            ]
+        },
+        "heavy_cannon": {
+            "name": "Heavy Cannon",
+            "rules": ["reload"],
+            "profiles": [
+                {"name": "Round", "short": 24, "medium": 48, "attacks": 1, "ap": 5, "rules": [{"id": "blast", "x": 9}]},
+                {"name": "Cannister", "short": 12, "medium": 24, "attacks": 12, "ap": 3}
+            ]
+        }
     },
     "rules": {
         "tank_ace": {"name": "Tank Ace", "description": "This unit gets +1 Accuracy.", "points": 25},
