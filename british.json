@@ -1,0 +1,171 @@
+{
+    "id": "british",
+    "name": "British",
+    "units": {
+        "field_officer": {
+            "name": "Field Offier Team",
+            "description": "A Field Commander.",
+            "min": 1,
+            "max": 1,
+            "category": "command",
+            "keywords": ["Infantry", "Officer"],
+            "subfactions": ["none", "infantry_focus", "armored_focus", "airborne_focus"],
+            "models": [
+                {
+                    "name": "Field Offier",
+                    "courage": 7,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 6,
+                    "wounds": 1,
+                    "weapons": ["musket_pistol", "unarmed"],
+                    "rules": [{"id": "field_orders", "x": 1}, "leader"],
+                    "min": 1,
+                    "max": 1
+                },
+                {"name": "Assistant", "courage": 6, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "wounds": 1, "weapons": ["musket_pistol", "unarmed"], "min": 1, "max": 2}
+            ]
+        },
+        "regulars": {
+            "name": "British Regulars",
+            "description": "A group of british infantry.",
+            "min": 1,
+            "max": 1,
+            "subfactions": ["none", "infantry_focus"],
+            "category": "infantry",
+            "keywords": ["Infantry"],
+            "rules": [
+                "formations"
+            ],
+            "models": [
+                {
+                    "name": "British Regular Sergeant",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "unarmed"],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "British Regular",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "unarmed"],
+                    "min": 4,
+                    "max": 11
+                }
+            ]
+        },
+        "grenadiers": {
+            "name": "British Grenadiers",
+            "description": "A group of british infantry.",
+            "min": 1,
+            "max": 1,
+            "subfactions": ["none", "infantry_focus"],
+            "category": "infantry",
+            "keywords": ["Infantry"],
+            "rules": [
+                "formations"
+            ],
+            "models": [
+                {
+                    "name": "British Grenadier Sergeant",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "unarmed"],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "British Grenadier",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "unarmed"],
+                    "min": 4,
+                    "max": 11
+                }
+            ]
+        }
+    },
+    "weapons": {},
+    "strategies": {
+        "rapid_fire": {
+            "phase": "activation",
+            "subfactions": ["none", "airborne_focus", "armored_focus", "infantry_focus"],
+            "name": "Rapid Fire",
+            "flavor": "British infantry were trained to fire their rifles at an incredibly high rate.",
+            "description": "Use when an Infantry unit with Rifles is firing. Hits rolls of 1 or 2 generate an additional shot.",
+            "cost": 1
+        },
+        "stiff_upper_lip": {
+            "phase": "activation",
+            "subfactions": ["none"],
+            "name": "Stiff Upper Lip",
+            "flavor": "British soldiers put up tough resistance in hand-to-hand fighting.",
+            "description": "Use before an Infantry unit uses a fight action. Its attacks gain AP1.",
+            "cost": 2
+        },
+        "focus_fire": {
+            "phase": "activation",
+            "subfactions": ["none", "airborne_focus", "armored_focus", "infantry_focus"],
+            "name": "Focus Fire",
+            "flavor": "Bren guns.",
+            "description": "Use instead of your activation. Choose 3 models from an Infantry unit to become a new scouting team unit. That unit immediately activates and is treated as a separate unit for the remainder of the game. This strategy may only be used once per Infantry unit.",
+            "cost": 1
+        },
+        "armored_assault": {
+            "phase": "activation",
+            "subfactions": ["armored_focus"],
+            "name": "(Armored) Armored Assault",
+            "flavor": "Occasionally armored units are used to push infantry and other units off a dug in position.",
+            "description": "Use when a Vehicle unit declares a Charge action. It is treated as having Shock(+3) for that action.",
+            "cost": 1
+        },
+        "improvised_tactics": {
+            "phase": "activation",
+            "subfactions": ["armored_focus"],
+            "name": "(Armored) Improvised Tactics",
+            "flavor": "Sometimes it is necessary to improvise in an armored engagement in order to gain the edge.",
+            "description": "Use when a Vehicle unit is attempting a reaction test. It is treated as having Initiative 9 for this test.",
+            "cost": 2
+        },
+        "crew_repairs": {
+            "phase": "activation",
+            "subfactions": ["armored_focus"],
+            "name": "(Armored) Emergency Repairs",
+            "flavor": "In moments of dire circumstance crews may need to repair their vehicle in combat.",
+            "description": "Use when a Vehicle unit is activated. That unit may repair one critical damage caused by a penetrating hit.",
+            "cost": 2
+        }
+    },
+    "rules": {
+        "natural_leader": {"name": "Natural Leader", "description": "This unit and friendly Infantry units within 6\" get +1 Courage and +1 Initiative.", "points": 15},
+        "defensive_fire": {"name": "Defensive Fire", "description": "This unit and friendly Infantry units within 6\" get +1 Accuracy when using an Ambush reaction.", "points": 10},
+        "move_it": {"name": "Move It", "description": "When this unit is activated, this unit and friendly Infantry units within 6\" may immediately remove one strain.", "points": 10},
+        "mobile_expert": {"name": "Mobile Expert", "description": "This unit may move and fire assault weapons without suffering the -1 to hit penalty.", "points": 20} 
+    },
+    "relics": {
+    }
+}

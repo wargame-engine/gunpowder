@@ -1,5 +1,6 @@
 {
     "factions": {
+        "british": {"name": "British", "id": "british", "url": "british.json", "color": "#ae2029"}
     },
     "categories": {
         "command": {"name": "Command"},
@@ -14,7 +15,6 @@
     "phases": {"pre_game": {"name": "Pre-Game"}, "bidding": {"name": "Bidding"}, "activation": {"name": "Activation"}},
     "alliances": {},
     "relics": {
-        "tank_ace": {"name": "Tank Ace (Core)", "rule": "tank_ace", "flavor": "A tank ace is a fearsome foe to encounter on the battlefield.", "description": "Upgrade one Tank unit with Tank Ace."},
         "inspiring_leader": {
             "name": "Inspiring Leader (Core)",
             "rule": "inspiring_leader",
@@ -66,12 +66,18 @@
         "frag_bombs": {"name": "Frags", "attacks": 1, "short": 6, "ap": 1, "rules": ["grenade", {"id": "blast", "x": 3}]},
         "at_grenades": {"name": "AT Grenade", "attacks": 1, "short": 6, "ap": 8, "rules": [{"id": "ammo", "x": 1}]},
         "pistol": {"name": "Pistol", "short": 6, "attacks": 1},
+        "musket_pistol": {"name": "Musket Pistol", "short": 6, "attacks": 1, "rules": ["reload"]},
         "smoke_bombs": {"name": "Smokes", "attacks": 1, "short": 6, "rules": ["grenade", "smoke", "indirect"]},
-        "rifle": {"name": "Rifle", "short": 12, "medium": 24, "attacks": 1}
+        "musket": {"name": "Musket", "short": 6, "medium": 12, "attacks": 1, "rules": ["reload"]},
+        "musketoon": {"name": "Musketoon", "short": 9, "medium": 18, "attacks": 1, "rules": ["reload"]},
+        "rifle": {"name": "Rifle", "short": 12, "medium": 24, "attacks": 1, "rules": ["reload"]},
+        "carbine": {"name": "Carbine", "short": 12, "medium": 24, "attacks": 1, "rules": ["assault", "reload"]},
+        "volley_gun": {"name": "Volley Gun", "short": 12, "medium": 24, "attacks": 1, "rules": ["reload"]}
     },
     "rules": {
         "tank_ace": {"name": "Tank Ace", "description": "This unit gets +1 Accuracy.", "points": 25},
         "inspiring_leader": {"name": "Inspiring Leader", "description": "This unit and friendly Infantry units within 6\" get +1 Courage.", "points": 10},
+        "reload": {"name": "Reload", "description": "After firing, a unit must spend 1 action to reload this weapon before it can be fired again.", "points": ["weapon.attacks", {"multiply": -1}]},
         "airdrop": {
             "name": "Airdrop",
             "description": "This unit may be set aside in reserves before the match begins if all models have airdrop. At the beginning of any round after the first you may attempt to place the unit anywhere on the table over 9” away from enemy units.\n\nTake a Courage test. If failed, use D10 scattering to determine the unit's new landing location. If the new location is off the table, place the unit at table edge as close as possible. If both players have units with Airdrop they must roll-off to see who deploys first, and then alternate in placing them.",
@@ -98,6 +104,11 @@
         "half_tracked": {"name": "Half-Tracked", "description": "This unit may ignore difficult terrain when moving.", "points": 5},
         "shock": {"name": "Shock", "inputs": ["x"], "description": "This model causes X hits with no AP when it successfully charges an enemy unit.", "points": [2, {"multiply": "rule.x"}]},
         "team": {"name": "Team", "inputs": ["x"], "description": "This weapon requires X models to operate effectively. It suffers -1 Accuracy for each model under this number."},
+        "formations": {
+            "name": "Formations",
+            "description": "When this unit is activated, choose X friendly Infantry units within 6\" to receive one of the following bonuses: \n* Re-roll hit rolls of 8+ \n* +3\" Movement \n* +1 Strength. \n\nA unit may only benefit from one Field Order.",
+            "points": [2]
+        },
         "field_orders": {
             "name": "Field Orders",
             "inputs": ["x"],
