@@ -1,0 +1,114 @@
+{
+    "factions": {
+    },
+    "categories": {
+        "command": {"name": "Command"},
+        "infantry": {"name": "Infantry"},
+        "support": {"name": "Support"},
+        "artillery": {"name": "Artillery"},
+        "light_vehicles": {"name": "Light Vehicles"},
+        "heavy_vehicles": {"name": "Heavy Vehicles"},
+        "transport": {"name": "Transport"},
+        "aircraft": {"name": "Aircraft"}
+    },
+    "phases": {"pre_game": {"name": "Pre-Game"}, "bidding": {"name": "Bidding"}, "activation": {"name": "Activation"}},
+    "alliances": {},
+    "relics": {
+        "tank_ace": {"name": "Tank Ace (Core)", "rule": "tank_ace", "flavor": "A tank ace is a fearsome foe to encounter on the battlefield.", "description": "Upgrade one Tank unit with Tank Ace."},
+        "inspiring_leader": {
+            "name": "Inspiring Leader (Core)",
+            "rule": "inspiring_leader",
+            "flavor": "A leader who can motivate his/her men to keep fighting is a key asset.",
+            "description": "Upgrade one Field Officer model with Inspiring Leader."
+        }
+    },
+    "powers": {},
+    "organizations": {},
+    "strategies": {
+        "divine_intervention": {
+            "phase": "activation",
+            "name": "Divine Intervention (Core)",
+            "flavor": "It seems luck has gone our way. Or maybe it's something more...",
+            "description": "Re-roll a single skill test die. It may not be re-rolled again.",
+            "cost": 1
+        },
+        "legendary_support": {
+            "phase": "pre_game",
+            "name": "Legendary Support (Core)",
+            "flavor": "A battle involving several legends is a story to be told.",
+            "description": "You may include one additional legend in your roster.",
+            "cost": 1
+        },
+        "incredible_courage": {
+            "phase": "activation",
+            "name": "Incredible Courage (Core)",
+            "flavor": "Even in the darkest of times, moments of great courage can occur.",
+            "description": "Once per battle, choose a unit that is about to take a Courage test. That unit is treated as having Courage 9 until the end of the round.",
+            "cost": 2
+        },
+        "battlefield_reserves": {
+            "phase": "pre_game",
+            "name": "Outflanking Reserves (Core)",
+            "flavor": "Sometimes assets are most useful finding an alternate route around the enemy.",
+            "description": "Up to half of any force's units, one point for each may be placed in outflanking reserves instead of deployed on the field. At the beginning of any round after the first, units may be set up within 6\" of a table edge that is not in the enemy deployment zone, and more than 12\" from any enemy units. If both players have reserves arriving on the same turn, roll off to see who places theirs first.",
+            "cost": "1/per"
+        },
+        "hidden_deployment": {
+            "phase": "pre_game",
+            "name": "Hidden Deployment (Core)",
+            "flavor": "Staying hidden and waiting for the right moment to strike can have a devastating effect.",
+            "description": "Any number of Infantry or Artillery units, one point per pair may be placed in hidden deployment instead of deployed on the field. See the section for hidden units in the core rules for details on how hidden units work.",
+            "cost": "1/pair"
+        }
+    },
+    "weapons": {
+        "unarmed": {"name": "Unarmed (Melee)", "short": "Melee", "attacks": 1},
+        "frag_bombs": {"name": "Frags", "attacks": 1, "short": 6, "ap": 1, "rules": ["grenade", {"id": "blast", "x": 3}]},
+        "at_grenades": {"name": "AT Grenade", "attacks": 1, "short": 6, "ap": 8, "rules": [{"id": "ammo", "x": 1}]},
+        "pistol": {"name": "Pistol", "short": 6, "attacks": 1},
+        "smoke_bombs": {"name": "Smokes", "attacks": 1, "short": 6, "rules": ["grenade", "smoke", "indirect"]},
+        "rifle": {"name": "Rifle", "short": 12, "medium": 24, "attacks": 1}
+    },
+    "rules": {
+        "tank_ace": {"name": "Tank Ace", "description": "This unit gets +1 Accuracy.", "points": 25},
+        "inspiring_leader": {"name": "Inspiring Leader", "description": "This unit and friendly Infantry units within 6\" get +1 Courage.", "points": 10},
+        "airdrop": {
+            "name": "Airdrop",
+            "description": "This unit may be set aside in reserves before the match begins if all models have airdrop. At the beginning of any round after the first you may attempt to place the unit anywhere on the table over 9” away from enemy units.\n\nTake a Courage test. If failed, use D10 scattering to determine the unit's new landing location. If the new location is off the table, place the unit at table edge as close as possible. If both players have units with Airdrop they must roll-off to see who deploys first, and then alternate in placing them.",
+            "points": 3
+        },
+        "medic": {
+            "name": "Medic",
+            "description": "Whenever this model, or a friendly Infantry model within 6\" fails a save, roll a D10. On a 3 or less that save is not failed. This model may never control or contest objectives.",
+            "points": 15
+        },
+        "fanatical": {"name": "Fanatical", "description": "This unit is treated as having Courage 9 for all break tests and does not gain strain from close combat.", "points": 3},
+        "side_skirts": {"name": "Side Skirts", "description": "This model gains +1 to its Save when hit in its side arcs from weapons with AP 4 or less.", "points": 5},
+        "gun_shield": {"name": "Gun Shield", "description": "This model gains +1 to its Save when hit in its front arc.", "points": 5},
+        "suppressive": {"name": "Suppressive", "description": "This model may take a suppressive fire action without suffering any to-hit penalties.", "points": 1},
+        "stubborn": {"name": "Stubborn", "description": "This model requires 1 additional suppression to become broken.", "points": ["model.wounds"]},
+        "smoke": {
+            "name": "Smoke",
+            "description": "Choose a location on the battlefield within range of this weapon and if a hit is successful, place a 3\" diameter smoke marker at the target location. If the weapon fires multiple shots and more than one lands on target, place any additional smoke markers in contact with the edge of the first hit. Smoke markers block line of sight and models inside or partially obscured by smoke markers gain the benefit of Soft Cover. At the end of the round, roll a D10 for each smoke marker. On a 5 or less the smoke marker is removed.",
+            "points": [-1]
+        },
+        "tracked": {"name": "Tracked", "description": "This unit may ignore difficult terrain and low obstacles when moving.", "points": 10},
+        "amphibious": {"name": "Amphibious", "description": "This unit may treat impassable water terrain as difficult terrain.", "points": 5},
+        "salvo": {"name": "Salvo", "description": "This weapon always hits at -1 Accuracy. When scattering results from this weapon, it hits the closest unit within 3\" instead of just 1\"."},
+        "half_tracked": {"name": "Half-Tracked", "description": "This unit may ignore difficult terrain when moving.", "points": 5},
+        "shock": {"name": "Shock", "inputs": ["x"], "description": "This model causes X hits with no AP when it successfully charges an enemy unit.", "points": [2, {"multiply": "rule.x"}]},
+        "team": {"name": "Team", "inputs": ["x"], "description": "This weapon requires X models to operate effectively. It suffers -1 Accuracy for each model under this number."},
+        "field_orders": {
+            "name": "Field Orders",
+            "inputs": ["x"],
+            "description": "When this unit is activated, choose X friendly Infantry units within 6\" to receive one of the following bonuses: \n* Re-roll hit rolls of 8+ \n* +3\" Movement \n* +1 Strength. \n\nA unit may only benefit from one Field Order.",
+            "points": [15, {"multiply": "rule.x"}]
+        },
+        "field_orders_armored": {
+            "name": "Field Orders (Armored)",
+            "inputs": ["x"],
+            "description": "When this unit is activated, choose X friendly Tank or Armored Car units within 6\" to receive one of the following bonuses: \n* Re-roll hit rolls of 8+ \n* +3\" Movement. \n\nA unit may only benefit from one Field Order.",
+            "points": [20, {"multiply": "rule.x"}]
+        }
+    }
+}
