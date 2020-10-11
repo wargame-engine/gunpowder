@@ -1,6 +1,7 @@
 {
     "factions": {
-        "british": {"name": "British", "id": "british", "url": "british.json", "color": "#ae2029"}
+        "british": {"name": "British", "id": "british", "url": "british.json", "color": "#ae2029"},
+        "united_states": {"name": "United States", "id": "united_states", "url": "united_states.json", "color": "#3c4d5f"}
     },
     "categories": {
         "command": {"name": "Command"},

@@ -1,6 +1,6 @@
 {
-    "id": "british",
-    "name": "British",
+    "id": "united_states",
+    "name": "United States",
     "units": {
         "field_officer": {
             "name": "Field Offier Team",
@@ -26,6 +26,46 @@
                     "max": 1
                 },
                 {"name": "Assistant", "courage": 6, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "wounds": 1, "weapons": ["musket_pistol", "bayonet"], "min": 0, "max": 2}
+            ]
+        },
+        "militia": {
+            "name": "Militia",
+            "description": "A group of infantry.",
+            "min": 1,
+            "max": 1,
+            "subfactions": ["none", "infantry_focus"],
+            "category": "infantry",
+            "keywords": ["Infantry"],
+            "rules": [
+                "formations"
+            ],
+            "models": [
+                {
+                    "name": "Militia Sergeant",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 4,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Militia",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 4,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
+                    "min": 9,
+                    "max": 23
+                }
             ]
         },
         "regulars": {
@@ -108,48 +148,8 @@
                 }
             ]
         },
-        "grenadiers": {
-            "name": "Grenadiers",
-            "description": "A group of infantry.",
-            "min": 1,
-            "max": 1,
-            "subfactions": ["none", "infantry_focus"],
-            "category": "infantry",
-            "keywords": ["Infantry"],
-            "rules": [
-                "formations"
-            ],
-            "models": [
-                {
-                    "name": "Grenadier Sergeant",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Grenadier",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 9,
-                    "max": 23
-                }
-            ]
-        },
-        "royal_marines": {
-            "name": "Royal Marines",
+        "us_marines": {
+            "name": "US Marines",
             "description": "A group of infantry.",
             "min": 1,
             "max": 1,
@@ -183,7 +183,7 @@
                     "reflexes": 6,
                     "wounds": 1,
                     "weapons": ["musket", "bayonet"],
-                    "min": 4,
+                    "min": 9,
                     "max": 11
                 }
             ]
@@ -268,46 +268,6 @@
                 }
             ]
         },
-        "highlanders": {
-            "name": "Highlanders",
-            "description": "A group of infantry.",
-            "min": 1,
-            "max": 1,
-            "subfactions": ["none", "infantry_focus"],
-            "category": "infantry",
-            "keywords": ["Infantry"],
-            "rules": [
-                "formations"
-            ],
-            "models": [
-                {
-                    "name": "Highlander Sergeant",
-                    "courage": 6,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Highlander",
-                    "courage": 6,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 9,
-                    "max": 23
-                }
-            ]
-        },
         "dragoons": {
             "name": "Dragoons",
             "description": "A group of cavalry.",
@@ -339,46 +299,6 @@
                     "movement": 8,
                     "shoot": 5,
                     "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["carbine", "musket_pistol", "sabre"],
-                    "min": 4,
-                    "max": 13
-                }
-            ]
-        },
-        "hussars": {
-            "name": "Hussars",
-            "description": "A group of cavalry.",
-            "min": 1,
-            "max": 1,
-            "subfactions": ["none", "infantry_focus"],
-            "category": "cavalry",
-            "keywords": ["Cavalry"],
-            "rules": [
-                "formations", {"id": "tough", "x": 2}
-            ],
-            "models": [
-                {
-                    "name": "Hussar Sergeant",
-                    "courage": 5,
-                    "movement": 8,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["carbine", "musket_pistol", "sabre"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Hussar",
-                    "courage": 5,
-                    "movement": 8,
-                    "shoot": 5,
-                    "fight": 6,
                     "defense": 5,
                     "reflexes": 5,
                     "wounds": 1,
@@ -484,11 +404,18 @@
         }
     },
     "rules": {
-        "natural_leader": {"name": "Natural Leader", "description": "This unit and friendly Infantry units within 6\" get +1 Courage and +1 Initiative.", "points": 15},
+        "symbol_of_hope": {"name": "Natural Leader", "description": "This unit and friendly Infantry units within 6\" get +1 Courage and +1 Initiative.", "points": 15},
         "defensive_fire": {"name": "Defensive Fire", "description": "This unit and friendly Infantry units within 6\" get +1 Accuracy when using an Ambush reaction.", "points": 10},
         "move_it": {"name": "Move It", "description": "When this unit is activated, this unit and friendly Infantry units within 6\" may immediately remove one strain.", "points": 10},
-        "mobile_expert": {"name": "Mobile Expert", "description": "This unit may move and fire assault weapons without suffering the -1 to hit penalty.", "points": 20} 
+        "mobile_expert": {"name": "Mobile Expert", "description": "This unit may move and fire assault weapons without suffering the -1 to hit penalty.", "points": 20}
     },
     "relics": {
+        "george_washington": {
+            "subfactions": ["none"],
+            "name": "George Washington",
+            "rule": "symbol_of_hope",
+            "flavor": "George Washington quickly became a symbol of hope and inspriation for colonial soldiers.",
+            "description": "Upgrade one Field Officer model with Symbol of Hope."
+        }
     }
 }
