@@ -129,7 +129,7 @@
         "team": {"name": "Team", "inputs": ["x"], "description": "This weapon requires X models to operate effectively. It suffers -1 Accuracy for each model under this number."},
         "formations": {
             "name": "Formations",
-            "description": "When this unit is activated, choose X friendly Infantry units within 6\" to receive one of the following bonuses: \n* Re-roll hit rolls of 8+ \n* +3\" Movement \n* +1 Strength. \n\nA unit may only benefit from one Field Order.",
+            "description": "When this unit is given a Move action, it may assume one of the following formations: \n * Line: This unit may increase its Range by 3\". \n * Column: This unit increases its Movement by 2\".",
             "points": [2]
         },
         "field_orders": {
