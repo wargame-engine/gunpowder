@@ -5,12 +5,9 @@
     "categories": {
         "command": {"name": "Command"},
         "infantry": {"name": "Infantry"},
+        "cavalry": {"name": "Cavalry"},
         "support": {"name": "Support"},
-        "artillery": {"name": "Artillery"},
-        "light_vehicles": {"name": "Light Vehicles"},
-        "heavy_vehicles": {"name": "Heavy Vehicles"},
-        "transport": {"name": "Transport"},
-        "aircraft": {"name": "Aircraft"}
+        "artillery": {"name": "Artillery"}
     },
     "phases": {"pre_game": {"name": "Pre-Game"}, "bidding": {"name": "Bidding"}, "activation": {"name": "Activation"}},
     "alliances": {},
@@ -63,6 +60,8 @@
     },
     "weapons": {
         "unarmed": {"name": "Unarmed (Melee)", "short": "Melee", "attacks": 1},
+        "bayonet": {"name": "Bayonet", "short": "Melee", "attacks": 1, "ap": 1},
+        "sabre": {"name": "Sabre", "short": "Melee", "attacks": 1, "ap": 1},
         "frag_bombs": {"name": "Frags", "attacks": 1, "short": 6, "ap": 1, "rules": ["grenade", {"id": "blast", "x": 3}]},
         "at_grenades": {"name": "AT Grenade", "attacks": 1, "short": 6, "ap": 8, "rules": [{"id": "ammo", "x": 1}]},
         "pistol": {"name": "Pistol", "short": 6, "attacks": 1},

@@ -14,23 +14,23 @@
                 {
                     "name": "Field Offier",
                     "courage": 7,
-                    "movement": 6,
+                    "movement": 6, 
                     "shoot": 5,
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 6,
                     "wounds": 1,
-                    "weapons": ["musket_pistol", "unarmed"],
+                    "weapons": ["musket_pistol", "sabre"],
                     "rules": [{"id": "field_orders", "x": 1}, "leader"],
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Assistant", "courage": 6, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "wounds": 1, "weapons": ["musket_pistol", "unarmed"], "min": 1, "max": 2}
+                {"name": "Assistant", "courage": 6, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "wounds": 1, "weapons": ["musket_pistol", "bayonet"], "min": 0, "max": 2}
             ]
         },
         "regulars": {
-            "name": "British Regulars",
-            "description": "A group of british infantry.",
+            "name": "Regulars",
+            "description": "A group of infantry.",
             "min": 1,
             "max": 1,
             "subfactions": ["none", "infantry_focus"],
@@ -41,7 +41,7 @@
             ],
             "models": [
                 {
-                    "name": "British Regular Sergeant",
+                    "name": "Regular Sergeant",
                     "courage": 5,
                     "movement": 6,
                     "shoot": 5,
@@ -49,12 +49,12 @@
                     "defense": 5,
                     "reflexes": 5,
                     "wounds": 1,
-                    "weapons": ["musket", "unarmed"],
+                    "weapons": ["musket", "bayonet"],
                     "min": 1,
                     "max": 1
                 },
                 {
-                    "name": "British Regular",
+                    "name": "Regular",
                     "courage": 5,
                     "movement": 6,
                     "shoot": 5,
@@ -62,15 +62,215 @@
                     "defense": 5,
                     "reflexes": 5,
                     "wounds": 1,
-                    "weapons": ["musket", "unarmed"],
+                    "weapons": ["musket", "bayonet"],
+                    "min": 4,
+                    "max": 23
+                }
+            ]
+        },
+        "veterans": {
+            "name": "Veterans",
+            "description": "A group of infantry.",
+            "min": 1,
+            "max": 1,
+            "subfactions": ["none", "infantry_focus"],
+            "category": "infantry",
+            "keywords": ["Infantry"],
+            "rules": [
+                "formations"
+            ],
+            "models": [
+                {
+                    "name": "Veteran Sergeant",
+                    "courage": 6,
+                    "movement": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Veteran",
+                    "courage": 6,
+                    "movement": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
+                    "min": 4,
+                    "max": 23
+                }
+            ]
+        },
+        "grenadiers": {
+            "name": "Grenadiers",
+            "description": "A group of infantry.",
+            "min": 1,
+            "max": 1,
+            "subfactions": ["none", "infantry_focus"],
+            "category": "infantry",
+            "keywords": ["Infantry"],
+            "rules": [
+                "formations"
+            ],
+            "models": [
+                {
+                    "name": "Grenadier Sergeant",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Grenadier",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
+                    "min": 4,
+                    "max": 23
+                }
+            ]
+        },
+        "royal_marines": {
+            "name": "Royal Marines",
+            "description": "A group of infantry.",
+            "min": 1,
+            "max": 1,
+            "subfactions": ["none", "infantry_focus"],
+            "category": "infantry",
+            "keywords": ["Infantry"],
+            "rules": [
+                "formations"
+            ],
+            "models": [
+                {
+                    "name": "Marine Sergeant",
+                    "courage": 6,
+                    "movement": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 6,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Marine",
+                    "courage": 6,
+                    "movement": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 6,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
                     "min": 4,
                     "max": 11
                 }
             ]
         },
-        "grenadiers": {
-            "name": "British Grenadiers",
-            "description": "A group of british infantry.",
+        "light_infantry": {
+            "name": "Light Infantry",
+            "description": "A group of infantry.",
+            "min": 1,
+            "max": 1,
+            "subfactions": ["none", "infantry_focus"],
+            "category": "infantry",
+            "keywords": ["Infantry"],
+            "rules": [
+                "formations", "agile"
+            ],
+            "models": [
+                {
+                    "name": "Light Infantry Sergeant",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Light Infantry",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
+                    "min": 4,
+                    "max": 11
+                }
+            ]
+        },
+        "light_skirmishers": {
+            "name": "Light Skirmishers",
+            "description": "A group of infantry.",
+            "min": 1,
+            "max": 1,
+            "subfactions": ["none", "infantry_focus"],
+            "category": "infantry",
+            "keywords": ["Infantry"],
+            "rules": [
+                "agile"
+            ],
+            "models": [
+                {
+                    "name": "Light Skirmisher Sergeant",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Light Skirmisher",
+                    "courage": 5,
+                    "movement": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["musket", "bayonet"],
+                    "min": 4,
+                    "max": 11
+                }
+            ]
+        },
+        "highlanders": {
+            "name": "Highlanders",
+            "description": "A group of infantry.",
             "min": 1,
             "max": 1,
             "subfactions": ["none", "infantry_focus"],
@@ -81,30 +281,110 @@
             ],
             "models": [
                 {
-                    "name": "British Grenadier Sergeant",
-                    "courage": 5,
+                    "name": "Highlander Sergeant",
+                    "courage": 6,
                     "movement": 6,
                     "shoot": 5,
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 5,
                     "wounds": 1,
-                    "weapons": ["musket", "unarmed"],
+                    "weapons": ["musket", "bayonet"],
                     "min": 1,
                     "max": 1
                 },
                 {
-                    "name": "British Grenadier",
-                    "courage": 5,
+                    "name": "Highlander",
+                    "courage": 6,
                     "movement": 6,
                     "shoot": 5,
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 5,
                     "wounds": 1,
-                    "weapons": ["musket", "unarmed"],
+                    "weapons": ["musket", "bayonet"],
                     "min": 4,
-                    "max": 11
+                    "max": 23
+                }
+            ]
+        },
+        "dragoons": {
+            "name": "Dragoons",
+            "description": "A group of cavalry.",
+            "min": 1,
+            "max": 1,
+            "subfactions": ["none", "infantry_focus"],
+            "category": "cavalry",
+            "keywords": ["Cavalry"],
+            "rules": [
+                "formations", {"id": "tough", "x": 2}
+            ],
+            "models": [
+                {
+                    "name": "Dragoon Sergeant",
+                    "courage": 5,
+                    "movement": 8,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["carbine", "musket_pistol", "sabre"],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Dragoon",
+                    "courage": 5,
+                    "movement": 8,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["carbine", "musket_pistol", "sabre"],
+                    "min": 4,
+                    "max": 13
+                }
+            ]
+        },
+        "hussars": {
+            "name": "Hussars",
+            "description": "A group of cavalry.",
+            "min": 1,
+            "max": 1,
+            "subfactions": ["none", "infantry_focus"],
+            "category": "cavalry",
+            "keywords": ["Cavalry"],
+            "rules": [
+                "formations", {"id": "tough", "x": 2}
+            ],
+            "models": [
+                {
+                    "name": "Hussar Sergeant",
+                    "courage": 5,
+                    "movement": 8,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["carbine", "musket_pistol", "sabre"],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Hussar",
+                    "courage": 5,
+                    "movement": 8,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "wounds": 1,
+                    "weapons": ["carbine", "musket_pistol", "sabre"],
+                    "min": 4,
+                    "max": 13
                 }
             ]
         },
@@ -190,7 +470,7 @@
             "phase": "activation",
             "subfactions": ["none", "airborne_focus", "armored_focus", "infantry_focus"],
             "name": "Rapid Fire",
-            "flavor": "British infantry were trained to fire their rifles at an incredibly high rate.",
+            "flavor": "infantry were trained to fire their rifles at an incredibly high rate.",
             "description": "Use when an Infantry unit with Rifles is firing. Hits rolls of 1 or 2 generate an additional shot.",
             "cost": 1
         },
@@ -198,40 +478,8 @@
             "phase": "activation",
             "subfactions": ["none"],
             "name": "Stiff Upper Lip",
-            "flavor": "British soldiers put up tough resistance in hand-to-hand fighting.",
-            "description": "Use before an Infantry unit uses a fight action. Its attacks gain AP1.",
-            "cost": 2
-        },
-        "focus_fire": {
-            "phase": "activation",
-            "subfactions": ["none", "airborne_focus", "armored_focus", "infantry_focus"],
-            "name": "Focus Fire",
-            "flavor": "Bren guns.",
-            "description": "Use instead of your activation. Choose 3 models from an Infantry unit to become a new scouting team unit. That unit immediately activates and is treated as a separate unit for the remainder of the game. This strategy may only be used once per Infantry unit.",
-            "cost": 1
-        },
-        "armored_assault": {
-            "phase": "activation",
-            "subfactions": ["armored_focus"],
-            "name": "(Armored) Armored Assault",
-            "flavor": "Occasionally armored units are used to push infantry and other units off a dug in position.",
-            "description": "Use when a Vehicle unit declares a Charge action. It is treated as having Shock(+3) for that action.",
-            "cost": 1
-        },
-        "improvised_tactics": {
-            "phase": "activation",
-            "subfactions": ["armored_focus"],
-            "name": "(Armored) Improvised Tactics",
-            "flavor": "Sometimes it is necessary to improvise in an armored engagement in order to gain the edge.",
-            "description": "Use when a Vehicle unit is attempting a reaction test. It is treated as having Initiative 9 for this test.",
-            "cost": 2
-        },
-        "crew_repairs": {
-            "phase": "activation",
-            "subfactions": ["armored_focus"],
-            "name": "(Armored) Emergency Repairs",
-            "flavor": "In moments of dire circumstance crews may need to repair their vehicle in combat.",
-            "description": "Use when a Vehicle unit is activated. That unit may repair one critical damage caused by a penetrating hit.",
+            "flavor": "soldiers put up tough resistance in hand-to-hand fighting.",
+            "description": "Use before an Infantry unit uses a fight action. Its attacks gain +1 Strength.",
             "cost": 2
         }
     },
