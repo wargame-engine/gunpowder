@@ -3,7 +3,7 @@
     "name": "United States",
     "units": {
         "field_officer": {
-            "name": "Field Offier Team",
+            "name": "Field Officer Team",
             "description": "A Field Commander.",
             "min": 1,
             "max": 1,
