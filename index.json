@@ -3,13 +3,7 @@
         "british": {"name": "British", "id": "british", "url": "british.json", "color": "#ae2029"},
         "united_states": {"name": "United States", "id": "united_states", "url": "united_states.json", "color": "#3c4d5f"}
     },
-    "categories": {
-        "command": {"name": "Command"},
-        "infantry": {"name": "Infantry"},
-        "cavalry": {"name": "Cavalry"},
-        "support": {"name": "Support"},
-        "artillery": {"name": "Artillery"}
-    },
+    "categories": {"command": {"name": "Command"}, "infantry": {"name": "Infantry"}, "cavalry": {"name": "Cavalry"}, "support": {"name": "Support"}, "artillery": {"name": "Artillery"}},
     "phases": {"pre_game": {"name": "Pre-Game"}, "bidding": {"name": "Bidding"}, "activation": {"name": "Activation"}},
     "alliances": {},
     "relics": {
@@ -21,7 +15,14 @@
         }
     },
     "powers": {},
-    "organizations": {},
+    "organizations": {
+        "battle": {
+            "name": "Battle (Core)",
+            "cost": 0,
+            "description": "A well-rounded force for taking on any mission.",
+            "categories": {"command": {"min": 1, "max": 2}, "infantry": {"min": 3, "max": 5}, "cavalry": {"min": 0, "max": 3}, "artillery": {"min": 0, "max": 2}}
+        }
+    },
     "strategies": {
         "divine_intervention": {
             "phase": "activation",
