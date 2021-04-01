@@ -113,7 +113,7 @@
             "description": "Whenever this model, or a friendly Infantry model within 6\" fails a save, roll a D10. On a 3 or less that save is not failed. This model may never control or contest objectives.",
             "points": 15
         },
-        "fanatical": {"name": "Fanatical", "description": "This unit is treated as having Courage 9 for all break tests and does not gain strain from close combat.", "points": 3},
+        "fanatical": {"name": "Fanatical", "description": "This unit is treated as having Courage 9 for all break tests and does not gain shock from close combat.", "points": 3},
         "side_skirts": {"name": "Side Skirts", "description": "This model gains +1 to its Save when hit in its side arcs from weapons with AP 4 or less.", "points": 5},
         "gun_shield": {"name": "Gun Shield", "description": "This model gains +1 to its Save when hit in its front arc.", "points": 5},
         "suppressive": {"name": "Suppressive", "description": "This model may take a suppressive fire action without suffering any to-hit penalties.", "points": 1},
