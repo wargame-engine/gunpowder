@@ -10,6 +10,7 @@
             "category": "command",
             "keywords": ["Infantry", "Officer"],
             "subfactions": ["none", "infantry_focus", "armored_focus", "airborne_focus"],
+            "options": [{"addRule": "mount_horse", "modelLimit": "all"}],
             "models": [
                 {
                     "name": "Field Officer",
