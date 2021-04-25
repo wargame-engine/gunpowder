@@ -417,7 +417,8 @@
             "name": "George Washington",
             "rule": "symbol_of_hope",
             "flavor": "George Washington quickly became a symbol of hope and inspriation for colonial soldiers.",
-            "description": "Upgrade one Field Officer model with Symbol of Hope."
+            "description": "Upgrade one Field Officer model with Symbol of Hope.",
+            "points": 10
         }
     }
 }
