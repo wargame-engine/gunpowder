@@ -1,11 +1,19 @@
 {
     "factions": {
-        "british": {"name": "British", "id": "british", "url": "british.json", "color": "#ae2029"},
-        "united_states": {"name": "United States", "id": "united_states", "url": "united_states.json", "color": "#3c4d5f"}
+        "british": {"name": "British", "id": "british", "url": "british.json", "color": "#ae2029", "alliance": "american_revolution_british"},
+        "united_states": {"name": "United States", "id": "united_states", "url": "united_states.json", "color": "#3c4d5f", "alliance": "american_revolution_rebels"}
+    },
+    "hidden_factions": {
+        "france": {"name": "France", "id": "united_states", "url": "united_states.json", "color": "#3c4d5f", "alliance": "american_revolution_rebels"},
+        "napoleonic_wars_france": {"name": "France", "id": "united_states", "url": "united_states.json", "color": "#3c4d5f", "alliance": "napoleonic_wars_france"}
     },
     "categories": {"command": {"name": "Command"}, "infantry": {"name": "Infantry"}, "cavalry": {"name": "Cavalry"}, "support": {"name": "Support"}, "artillery": {"name": "Artillery"}},
     "phases": {"pre_game": {"name": "Pre-Game"}, "bidding": {"name": "Bidding"}, "activation": {"name": "Activation"}},
-    "alliances": {},
+    "alliances": {
+        "american_revolution_rebels": {"name": "American Revolution (Rebels)"},
+        "american_revolution_british": {"name": "American Revolution (British)"},
+        "napoleonic_wars_france": {"name": "Napoleonic Wars (France)"}
+    },
     "relics": {
         "inspiring_leader": {
             "name": "Inspiring Leader (Core)",
