@@ -279,7 +279,7 @@
             "category": "cavalry",
             "keywords": ["Cavalry"],
             "rules": [
-                "formations", {"id": "tough", "x": 2}
+                "formations", {"id": "wounds", "x": 2}
             ],
             "models": [
                 {
