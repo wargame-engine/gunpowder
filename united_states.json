@@ -20,14 +20,14 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 6,
-                    "wounds": 1,
+                    
                     "weapons": ["musket_pistol", "sabre"],
                     "rules": [{"id": "field_orders", "x": 1}, "leader"],
                     "options": [{"replaceRule": {"id": "field_orders", "x": 1}, "withRule": {"id": "field_orders", "x": 2}}],
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Assistant", "courage": 6, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "wounds": 1, "weapons": ["musket_pistol", "bayonet"], "min": 0, "max": 2}
+                {"name": "Assistant", "courage": 6, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5,  "weapons": ["musket_pistol", "bayonet"], "min": 0, "max": 2}
             ]
         },
         "militia": {
@@ -50,7 +50,7 @@
                     "fight": 5,
                     "defense": 4,
                     "reflexes": 5,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 1,
                     "max": 1
@@ -63,7 +63,7 @@
                     "fight": 5,
                     "defense": 4,
                     "reflexes": 5,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 9,
                     "max": 23
@@ -90,7 +90,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 5,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 1,
                     "max": 1
@@ -103,7 +103,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 5,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 9,
                     "max": 23
@@ -130,7 +130,7 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 6,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 1,
                     "max": 1
@@ -143,7 +143,7 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 6,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 9,
                     "max": 23
@@ -170,7 +170,7 @@
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 6,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 1,
                     "max": 1
@@ -183,7 +183,7 @@
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 6,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 9,
                     "max": 11
@@ -210,7 +210,7 @@
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 5,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 1,
                     "max": 1
@@ -223,7 +223,7 @@
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 5,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 4,
                     "max": 11
@@ -250,7 +250,7 @@
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 5,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 1,
                     "max": 1
@@ -263,7 +263,7 @@
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 5,
-                    "wounds": 1,
+                    
                     "weapons": ["musket", "bayonet"],
                     "min": 4,
                     "max": 11
@@ -290,7 +290,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 5,
-                    "wounds": 1,
+                    
                     "weapons": ["carbine", "musket_pistol", "sabre"],
                     "min": 1,
                     "max": 1
@@ -303,7 +303,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 5,
-                    "wounds": 1,
+                    
                     "weapons": ["carbine", "musket_pistol", "sabre"],
                     "min": 4,
                     "max": 13
@@ -318,21 +318,21 @@
             "category": "artillery",
             "subfactions": ["none", "infantry_focus"],
             "keywords": ["Artillery"],
-            "rules": [{"id": "crew", "x": 3}],
             "models": [
                 {
                     "name": "Light Cannon",
-                    "courage": 5,
+                    "courage": "-",
                     "movement": 4,
                     "shoot": 5,
                     "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 4,
-                    "weapons": [{"id": "light_cannon", "mount": ["Front"]}, {"id": "unarmed", "count": 4}],
+                    "defense": "-",
+                    "reflexes": "-",
+                    "rules": [{"id": "crew", "x": 3}],
+                    "weapons": [{"id": "light_cannon", "mount": ["Front"]}],
                     "min": 1,
                     "max": 1
-                }
+                },
+                {"name": "Crew", "courage": 5, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["unarmed"], "min": 3, "max": 3}
             ]
         },
         "medium_cannon": {
@@ -343,21 +343,21 @@
             "category": "artillery",
             "subfactions": ["none", "infantry_focus"],
             "keywords": ["Artillery"],
-            "rules": [{"id": "crew", "x": 3}],
             "models": [
                 {
                     "name": "Medium Cannon",
-                    "courage": 5,
+                    "courage": "-",
                     "movement": 3,
                     "shoot": 5,
                     "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 4,
-                    "weapons": [{"id": "medium_cannon", "mount": ["Front"]}, {"id": "unarmed", "count": 4}],
+                    "defense": "-",
+                    "reflexes": "-",
+                    "rules": [{"id": "crew", "x": 3}],
+                    "weapons": [{"id": "medium_cannon", "mount": ["Front"]}],
                     "min": 1,
                     "max": 1
-                }
+                },
+                {"name": "Crew", "courage": 5, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["unarmed"], "min": 3, "max": 3}
             ]
         },
         "heavy_cannon": {
@@ -368,21 +368,21 @@
             "category": "artillery",
             "subfactions": ["none", "infantry_focus"],
             "keywords": ["Artillery"],
-            "rules": [{"id": "crew", "x": 3}],
             "models": [
                 {
                     "name": "Heavy Cannon",
-                    "courage": 5,
+                    "courage": "-",
                     "movement": 3,
                     "shoot": 5,
                     "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 4,
-                    "weapons": [{"id": "heavy_cannon", "mount": ["Front"]}, {"id": "unarmed", "count": 4}],
+                    "defense": "-",
+                    "reflexes": "-",
+                    "rules": [{"id": "crew", "x": 3}],
+                    "weapons": [{"id": "heavy_cannon", "mount": ["Front"]}],
                     "min": 1,
                     "max": 1
-                }
+                },
+                {"name": "Crew", "courage": 5, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["unarmed"], "min": 4, "max": 4}
             ]
         }
     },

@@ -15,19 +15,18 @@
                 {
                     "name": "Field Officer",
                     "courage": 7,
-                    "movement": 6, 
+                    "movement": 6,
                     "shoot": 6,
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 6,
-                    "wounds": 1,
                     "weapons": ["musket_pistol", "sabre"],
                     "rules": [{"id": "field_orders", "x": 1}, "leader"],
                     "options": [{"replaceRule": {"id": "field_orders", "x": 1}, "withRule": {"id": "field_orders", "x": 2}}],
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Assistant", "courage": 6, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "wounds": 1, "weapons": ["musket_pistol", "bayonet"], "min": 0, "max": 2}
+                {"name": "Assistant", "courage": 6, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["musket_pistol", "bayonet"], "min": 0, "max": 2}
             ]
         },
         "regulars": {
@@ -38,36 +37,10 @@
             "subfactions": ["none", "infantry_focus"],
             "category": "infantry",
             "keywords": ["Infantry"],
-            "rules": [
-                "formations"
-            ],
+            "rules": ["formations"],
             "models": [
-                {
-                    "name": "Regular Sergeant",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Regular",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 9,
-                    "max": 23
-                }
+                {"name": "Regular Sergeant", "courage": 5, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["musket", "bayonet"], "min": 1, "max": 1},
+                {"name": "Regular", "courage": 5, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["musket", "bayonet"], "min": 9, "max": 23}
             ]
         },
         "veterans": {
@@ -78,36 +51,10 @@
             "subfactions": ["none", "infantry_focus"],
             "category": "infantry",
             "keywords": ["Infantry"],
-            "rules": [
-                "formations"
-            ],
+            "rules": ["formations"],
             "models": [
-                {
-                    "name": "Veteran Sergeant",
-                    "courage": 6,
-                    "movement": 6,
-                    "shoot": 6,
-                    "fight": 6,
-                    "defense": 6,
-                    "reflexes": 6,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Veteran",
-                    "courage": 6,
-                    "movement": 6,
-                    "shoot": 6,
-                    "fight": 6,
-                    "defense": 6,
-                    "reflexes": 6,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 9,
-                    "max": 23
-                }
+                {"name": "Veteran Sergeant", "courage": 6, "movement": 6, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["musket", "bayonet"], "min": 1, "max": 1},
+                {"name": "Veteran", "courage": 6, "movement": 6, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["musket", "bayonet"], "min": 9, "max": 23}
             ]
         },
         "grenadiers": {
@@ -118,36 +65,10 @@
             "subfactions": ["none", "infantry_focus"],
             "category": "infantry",
             "keywords": ["Infantry"],
-            "rules": [
-                "formations"
-            ],
+            "rules": ["formations"],
             "models": [
-                {
-                    "name": "Grenadier Sergeant",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Grenadier",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 9,
-                    "max": 23
-                }
+                {"name": "Grenadier Sergeant", "courage": 5, "movement": 6, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["musket", "bayonet"], "min": 1, "max": 1},
+                {"name": "Grenadier", "courage": 5, "movement": 6, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["musket", "bayonet"], "min": 9, "max": 23}
             ]
         },
         "royal_marines": {
@@ -158,36 +79,10 @@
             "subfactions": ["none", "infantry_focus"],
             "category": "infantry",
             "keywords": ["Infantry"],
-            "rules": [
-                "formations"
-            ],
+            "rules": ["formations"],
             "models": [
-                {
-                    "name": "Marine Sergeant",
-                    "courage": 6,
-                    "movement": 6,
-                    "shoot": 6,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 6,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Marine",
-                    "courage": 6,
-                    "movement": 6,
-                    "shoot": 6,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 6,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 4,
-                    "max": 11
-                }
+                {"name": "Marine Sergeant", "courage": 6, "movement": 6, "shoot": 6, "fight": 6, "defense": 5, "reflexes": 6, "weapons": ["musket", "bayonet"], "min": 1, "max": 1},
+                {"name": "Marine", "courage": 6, "movement": 6, "shoot": 6, "fight": 6, "defense": 5, "reflexes": 6, "weapons": ["musket", "bayonet"], "min": 4, "max": 11}
             ]
         },
         "light_infantry": {
@@ -198,36 +93,10 @@
             "subfactions": ["none", "infantry_focus"],
             "category": "infantry",
             "keywords": ["Infantry"],
-            "rules": [
-                "formations", "agile"
-            ],
+            "rules": ["formations", "agile"],
             "models": [
-                {
-                    "name": "Light Infantry Sergeant",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Light Infantry",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 4,
-                    "max": 11
-                }
+                {"name": "Light Infantry Sergeant", "courage": 5, "movement": 6, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["musket", "bayonet"], "min": 1, "max": 1},
+                {"name": "Light Infantry", "courage": 5, "movement": 6, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["musket", "bayonet"], "min": 4, "max": 11}
             ]
         },
         "light_skirmishers": {
@@ -238,36 +107,10 @@
             "subfactions": ["none", "infantry_focus"],
             "category": "infantry",
             "keywords": ["Infantry"],
-            "rules": [
-                "agile"
-            ],
+            "rules": ["agile"],
             "models": [
-                {
-                    "name": "Light Skirmisher Sergeant",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Light Skirmisher",
-                    "courage": 5,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 4,
-                    "max": 11
-                }
+                {"name": "Light Skirmisher Sergeant", "courage": 5, "movement": 6, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["musket", "bayonet"], "min": 1, "max": 1},
+                {"name": "Light Skirmisher", "courage": 5, "movement": 6, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["musket", "bayonet"], "min": 4, "max": 11}
             ]
         },
         "highlanders": {
@@ -278,36 +121,10 @@
             "subfactions": ["none", "infantry_focus"],
             "category": "infantry",
             "keywords": ["Infantry"],
-            "rules": [
-                "formations"
-            ],
+            "rules": ["formations"],
             "models": [
-                {
-                    "name": "Highlander Sergeant",
-                    "courage": 6,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Highlander",
-                    "courage": 6,
-                    "movement": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["musket", "bayonet"],
-                    "min": 9,
-                    "max": 23
-                }
+                {"name": "Highlander Sergeant", "courage": 6, "movement": 6, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["musket", "bayonet"], "min": 1, "max": 1},
+                {"name": "Highlander", "courage": 6, "movement": 6, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["musket", "bayonet"], "min": 9, "max": 23}
             ]
         },
         "dragoons": {
@@ -318,36 +135,10 @@
             "subfactions": ["none", "infantry_focus"],
             "category": "cavalry",
             "keywords": ["Cavalry"],
-            "rules": [
-                "formations", {"id": "wounds", "x": 2}
-            ],
+            "rules": ["formations", {"id": "wounds", "x": 2}],
             "models": [
-                {
-                    "name": "Dragoon Sergeant",
-                    "courage": 5,
-                    "movement": 8,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["carbine", "musket_pistol", "sabre"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Dragoon",
-                    "courage": 5,
-                    "movement": 8,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["carbine", "musket_pistol", "sabre"],
-                    "min": 4,
-                    "max": 13
-                }
+                {"name": "Dragoon Sergeant", "courage": 5, "movement": 8, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["carbine", "musket_pistol", "sabre"], "min": 1, "max": 1},
+                {"name": "Dragoon", "courage": 5, "movement": 8, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["carbine", "musket_pistol", "sabre"], "min": 4, "max": 13}
             ]
         },
         "hussars": {
@@ -358,36 +149,10 @@
             "subfactions": ["none", "infantry_focus"],
             "category": "cavalry",
             "keywords": ["Cavalry"],
-            "rules": [
-                "formations", {"id": "wounds", "x": 2}
-            ],
+            "rules": ["formations", {"id": "wounds", "x": 2}],
             "models": [
-                {
-                    "name": "Hussar Sergeant",
-                    "courage": 5,
-                    "movement": 8,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["carbine", "musket_pistol", "sabre"],
-                    "min": 1,
-                    "max": 1
-                },
-                {
-                    "name": "Hussar",
-                    "courage": 5,
-                    "movement": 8,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 1,
-                    "weapons": ["carbine", "musket_pistol", "sabre"],
-                    "min": 4,
-                    "max": 13
-                }
+                {"name": "Hussar Sergeant", "courage": 5, "movement": 8, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "musket_pistol", "sabre"], "min": 1, "max": 1},
+                {"name": "Hussar", "courage": 5, "movement": 8, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "musket_pistol", "sabre"], "min": 4, "max": 13}
             ]
         },
         "light_cannon": {
@@ -398,21 +163,21 @@
             "category": "artillery",
             "subfactions": ["none", "infantry_focus"],
             "keywords": ["Artillery"],
-            "rules": [{"id": "crew", "x": 3}],
             "models": [
                 {
                     "name": "Light Cannon",
-                    "courage": 5,
+                    "courage": "-",
                     "movement": 4,
                     "shoot": 5,
                     "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 4,
-                    "weapons": [{"id": "light_cannon", "mount": ["Front"]}, {"id": "unarmed", "count": 4}],
+                    "defense": "-",
+                    "reflexes": "-",
+                    "rules": [{"id": "crew", "x": 3}],
+                    "weapons": [{"id": "light_cannon", "mount": ["Front"]}],
                     "min": 1,
                     "max": 1
-                }
+                },
+                {"name": "Crew", "courage": 5, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["unarmed"], "min": 3, "max": 3}
             ]
         },
         "medium_cannon": {
@@ -423,21 +188,21 @@
             "category": "artillery",
             "subfactions": ["none", "infantry_focus"],
             "keywords": ["Artillery"],
-            "rules": [{"id": "crew", "x": 3}],
             "models": [
                 {
                     "name": "Medium Cannon",
-                    "courage": 5,
+                    "courage": "-",
                     "movement": 3,
                     "shoot": 5,
                     "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 4,
-                    "weapons": [{"id": "medium_cannon", "mount": ["Front"]}, {"id": "unarmed", "count": 4}],
+                    "defense": "-",
+                    "reflexes": "-",
+                    "rules": [{"id": "crew", "x": 3}],
+                    "weapons": [{"id": "medium_cannon", "mount": ["Front"]}],
                     "min": 1,
                     "max": 1
-                }
+                },
+                {"name": "Crew", "courage": 5, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["unarmed"], "min": 3, "max": 3}
             ]
         },
         "heavy_cannon": {
@@ -448,21 +213,21 @@
             "category": "artillery",
             "subfactions": ["none", "infantry_focus"],
             "keywords": ["Artillery"],
-            "rules": [{"id": "crew", "x": 3}],
             "models": [
                 {
                     "name": "Heavy Cannon",
-                    "courage": 5,
+                    "courage": "-",
                     "movement": 3,
                     "shoot": 5,
                     "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "wounds": 4,
-                    "weapons": [{"id": "heavy_cannon", "mount": ["Front"]}, {"id": "unarmed", "count": 4}],
+                    "defense": "-",
+                    "reflexes": "-",
+                    "rules": [{"id": "crew", "x": 3}],
+                    "weapons": [{"id": "heavy_cannon", "mount": ["Front"]}],
                     "min": 1,
                     "max": 1
-                }
+                },
+                {"name": "Crew", "courage": 5, "movement": 6, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["unarmed"], "min": 4, "max": 4}
             ]
         }
     },
@@ -489,8 +254,7 @@
         "natural_leader": {"name": "Natural Leader", "description": "This unit and friendly Infantry units within 6\" get +1 Courage and +1 Initiative.", "points": 15},
         "defensive_fire": {"name": "Defensive Fire", "description": "This unit and friendly Infantry units within 6\" get +1 Accuracy when using an Ambush reaction.", "points": 10},
         "move_it": {"name": "Move It", "description": "When this unit is activated, this unit and friendly Infantry units within 6\" may immediately remove one shock.", "points": 10},
-        "mobile_expert": {"name": "Mobile Expert", "description": "This unit may move and fire assault weapons without suffering the -1 to hit penalty.", "points": 20} 
+        "mobile_expert": {"name": "Mobile Expert", "description": "This unit may move and fire assault weapons without suffering the -1 to hit penalty.", "points": 20}
     },
-    "relics": {
-    }
+    "relics": {}
 }
