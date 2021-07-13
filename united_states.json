@@ -372,7 +372,7 @@
                 {
                     "name": "Heavy Cannon",
                     "courage": "-",
-                    "movement": 3,
+                    "movement": 2,
                     "shoot": 5,
                     "fight": 5,
                     "defense": "-",

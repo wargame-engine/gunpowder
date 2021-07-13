@@ -87,24 +87,24 @@
             "name": "Light Cannon",
             "rules": ["reload"],
             "profiles": [
-                {"name": "Round", "short": 24, "medium": 48, "attacks": 1, "ap": 3, "rules": [{"id": "blast", "x": 5}]},
-                {"name": "Cannister", "short": 12, "medium": 24, "attacks": 8, "ap": 1}
+                {"name": "Round", "short": 24, "medium": 48, "attacks": 1, "ap": 6, "rules": [{"id": "blast", "x": 3}]},
+                {"name": "Cannister", "short": 12, "medium": 24, "attacks": 6, "ap": 1}
             ]
         },
         "medium_cannon": {
             "name": "Medium Cannon",
             "rules": ["reload"],
             "profiles": [
-                {"name": "Round", "short": 24, "medium": 48, "attacks": 1, "ap": 4, "rules": [{"id": "blast", "x": 7}]},
-                {"name": "Cannister", "short": 12, "medium": 24, "attacks": 10, "ap": 2}
+                {"name": "Round", "short": 36, "medium": 72, "attacks": 1, "ap": 7, "rules": [{"id": "blast", "x": 4}]},
+                {"name": "Cannister", "short": 12, "medium": 24, "attacks": 8, "ap": 2}
             ]
         },
         "heavy_cannon": {
             "name": "Heavy Cannon",
             "rules": ["reload"],
             "profiles": [
-                {"name": "Round", "short": 24, "medium": 48, "attacks": 1, "ap": 5, "rules": [{"id": "blast", "x": 9}]},
-                {"name": "Cannister", "short": 12, "medium": 24, "attacks": 12, "ap": 3}
+                {"name": "Round", "short": 48, "medium": 84, "attacks": 1, "ap": 8, "rules": [{"id": "blast", "x": 5}]},
+                {"name": "Cannister", "short": 12, "medium": 24, "attacks": 10, "ap": 3}
             ]
         }
     },
